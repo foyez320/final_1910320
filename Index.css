@@ -5,10 +5,8 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
 }
 
 header {
@@ -24,54 +22,26 @@ h1 {
 
 main {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     margin: 20px 0;
 }
 
-.left-section,
-.middle-section,
-.right-section {
-    width: calc(33.333% - 10px);
-    box-sizing: border-box;
-    margin-right: 10px;
-}
-
-.left-section img {
-    width: 50%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    height: min-content;
-}
-
-.middle-section,
-.right-section {
-    margin-top: 20px;
-    height: auto;
-    border-radius: 8px;
-}
-
-.middle-section .search-section {
+.search-section {
     margin-bottom: 20px;
 }
 
 input {
-    padding: 15px;
+    padding: 10px;
     margin-right: 10px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
 }
 
 button {
-    padding: 15px;
+    padding: 10px;
     background-color: #4caf50;
     color: white;
     border: none;
-    border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
 }
 
 .weather-info {
@@ -82,7 +52,7 @@ button {
 }
 
 .weather-card {
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
     margin: 10px;
     border-radius: 8px;
@@ -91,98 +61,6 @@ button {
 }
 
 .weather-card img {
-    max-width: 100px;
-    margin-bottom: 15px;
-}
-
-.weather-card p {
-    margin: 10px 0;
-    font-size: 16px;
-    color: #555;
-}
-
-.right-section .calendar {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-
-
-
-/* calendar */
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
-
-/* Month header */
-.month {
-  padding: 70px 25px;
-  width: 100%;
-  background: #1abc9c;
-  text-align: center;
-}
-
-/* Month list */
-.month ul {
-  margin: 0;
-  padding: 0;
-}
-
-.month ul li {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-/* Previous button inside month header */
-.month .prev {
-  float: left;
-  padding-top: 10px;
-}
-
-/* Next button */
-.month .next {
-  float: right;
-  padding-top: 10px;
-}
-
-/* Weekdays (Mon-Sun) */
-.weekdays {
-  margin: 0;
-  padding: 10px 0;
-  background-color:#ddd;
-}
-
-.weekdays li {
-  display: inline-block;
-  width: 13.6%;
-  color: #666;
-  text-align: center;
-}
-
-/* Days (1-31) */
-.days {
-  padding: 10px 0;
-  background: #eee;
-  margin: 0;
-}
-
-.days li {
-  list-style-type: none;
-  display: inline-block;
-  width: 13.6%;
-  text-align: center;
-  margin-bottom: 5px;
-  font-size:12px;
-  color: #777;
-}
-
-/* Highlight the "current" day */
-.days li .active {
-  padding: 5px;
-  background: #1abc9c;
-  color: white !important
+    max-width: 80px;
+    margin-bottom: 10px;
 }
