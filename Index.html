@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="Index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather App</h1>
+        </header>
+        <main>
+            <section class="left-section">
+
+                <div class="picture-gallery">
+                    <img src="Images/sunny.png" alt="Sunny Day">
+                    <img src="Images/rainy.png" alt="Rainy Day">
+                    <img src="Images/cloudy.png" alt="Cloudy Day">
+                </div>
+            </section>
+            <section class="middle-section">
+                <section class="search-section">
+                    <input type="text" id="searchInput" placeholder="Enter Location">
+                    <button onclick="searchWeather()">Search</button>
+                </section>
+                <section id="weatherInfo" class="weather-info"></section>
+            </section>
+            <section class="right-section">
+                <div class="calendar">   <!-- Calendar from 3wschools -->                
+                    <div class="month"> 
+                        <ul>
+                          <li class="prev">&#10094;</li>
+                          <li class="next">&#10095;</li>
+                          <li>August<br><span style="font-size:18px">2021</span></li>
+                        </ul>
+                      </div>
+                      
+                      <ul class="weekdays">
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>Fr</li>
+                        <li>Sa</li>
+                        <li>Su</li>
+                      </ul>
+                      
+                      <ul class="days">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li><span class="active">10</span></li>
+                        <li>11</li>
+                        ...etc
+                      </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <script src="Index.js">
+
+    </script>
+</body>
+</html>
