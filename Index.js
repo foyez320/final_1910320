@@ -26,7 +26,7 @@ function displayWeather(data) {
 
     const cityName = data.name;
     const country = data.sys.country;
-    const temperature = Math.round(data.main.temp - 273.15); // Convert to Celsius
+    const temperature = Math.round(data.main.temp - 273.15); 
 
     const weatherDescription = data.weather[0].description;
     const iconCode = data.weather[0].icon;

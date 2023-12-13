@@ -11,16 +11,28 @@
 <body>
     <div class="container">
         <header>
-            <h1>Weather Report</h1>
+            <h1>Weather Forecast</h1>
         </header>
         <main>
-            <section class="search-section">
-                <input type="text" id="searchInput" placeholder="Enter Location">
-                <button onclick="searchWeather()">Search</button>
+            <section class="left-section">
+                <div class="picture-gallery">
+                    <img src="images/sunny.png" alt="Sunny Day">
+                    <img src="images/rainy.png" alt="Rainy Day">
+                    <img src="images/cloudy.png" alt="Cloudy Day">
+                </div>
             </section>
-            <section id="weatherInfo" class="weather-info"></section>
+            <section class="middle-section">
+                <section class="search-section">
+                    <input type="text" id="searchInput" placeholder="Enter Location">
+                    <button onclick="searchWeather()">Search</button>
+                </section>
+                <section id="weatherInfo" class="weather-info"></section>
+            </section>
         </main>
-    </div>
+
+        <footer>
+            
+        </footer>
     <script src="Index.js">
 
     </script>
